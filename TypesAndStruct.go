@@ -17,7 +17,8 @@ func TypesAndStruct() {
 		FirstName: "Tega",
 		LastName:  "Oke",
 		Age:       29,
+		BirthDate: time.Now(),
 	}
 
-	log.Println(person.FirstName, person.LastName, person.Age)
+	log.Println(person.FirstName, person.LastName, person.Age, person.BirthDate)
 }
