@@ -8,4 +8,7 @@ func main() {
 	Variables()
 
 	Pointers()
+
+	TypesAndStruct()
+
 }
