@@ -15,4 +15,6 @@ func main() {
 
 	MapsAndSlices()
 
+	DecisionStructures()
+
 }
