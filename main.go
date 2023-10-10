@@ -21,4 +21,8 @@ func main() {
 
 	interfaces()
 
+	Packages()
+
+	Channels()
+
 }
