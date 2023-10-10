@@ -29,7 +29,7 @@ func Json() {
 	err := json.Unmarshal([]byte(newJson), &unmarshaledJson)
 
 	if err != nil {
-		log.Println("An error occured: %v", err)
+		log.Printf("An error occured: %v", err)
 	}
 
 	log.Println(unmarshaledJson)

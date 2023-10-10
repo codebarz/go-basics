@@ -25,4 +25,6 @@ func main() {
 
 	Channels()
 
+	Json()
+
 }
