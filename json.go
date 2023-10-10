@@ -34,6 +34,25 @@ func Json() {
 
 	log.Println(unmarshaledJson)
 
+	//unmarshal JSON
+
+	var userArray []NewUser
+
+	userOne := NewUser{Name: "Tega", Age: 28, IsBlack: true}
+	userTwo := NewUser{Name: "Tosin", Age: 30, IsBlack: false}
+
+	userArray = append(userArray, userOne)
+	userArray = append(userArray, userTwo)
+
+	theJson, err := json.MarshalIndent(userArray, "", "    ")
+
+	if err != nil {
+		log.Printf("An error occured: %v", err)
+	}
+
+	// log.Println(theJson)
+	log.Println(string(theJson))
+
 	log.Println("=========== JSON ===========")
 
 }
